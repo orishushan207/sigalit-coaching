@@ -746,16 +746,15 @@ a.cd-value:hover { color: var(--gold-deep); }
   }
   .nav a {
     font-family: var(--font-hand);
-    font-size: 1.6rem;
-    letter-spacing: .03em;
+    font-size: 1.45rem;
+    letter-spacing: .02em;
     color: var(--ink-soft);
-    width: 240px;
-    padding: 18px 0;
-    border-bottom: 1px solid var(--line);
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 0;
+    gap: 14px;
+    padding: 13px 0;
+    border: none;
     opacity: 0;
     transform: translateY(16px);
     transition: opacity .3s ease, transform .3s ease, color .2s;
@@ -763,18 +762,17 @@ a.cd-value:hover { color: var(--gold-deep); }
   .nav a::before { display: none; }
   .nav a::after { display: none; }
   .nav-icon {
-    width: 36px;
+    width: 28px;
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: .55;
-    color: var(--gold-deep);
+    color: var(--muted);
   }
   .nav-icon svg { width: 20px; height: 20px; }
-  .nav-label { flex: 1; }
-  .nav a:first-child { border-top: 1px solid var(--line); }
-  .nav a:hover { color: var(--gold-deep); }
+  .nav-label { flex: 1; text-align: right; }
+  .nav a:hover { color: var(--ink); }
+  .nav a:hover .nav-icon { color: var(--gold-deep); }
   .nav a:hover { color: var(--gold-deep); }
   .nav.open a {
     opacity: 1;
