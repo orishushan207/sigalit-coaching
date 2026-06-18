@@ -734,7 +734,7 @@ a.cd-value:hover { color: var(--gold-deep); }
     justify-content: center;
     align-items: center;
     gap: 0;
-    padding: 0 40px;
+    padding: 0;
     opacity: 0;
     visibility: hidden;
     transition: opacity .35s ease, visibility .35s ease;
