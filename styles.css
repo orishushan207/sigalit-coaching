@@ -750,7 +750,8 @@ a.cd-value:hover { color: var(--gold-deep); }
   }
   .nav a::before { display: none; }
   .nav a::after { display: none; }
-  .nav-icon { font-size: 1.1rem; margin-left: 14px; opacity: .7; }
+  .nav-icon { display: inline-flex; align-items: center; margin-left: 16px; opacity: .6; }
+  .nav-icon svg { width: 22px; height: 22px; }
   .nav a:first-child { border-top: 1px solid var(--line); }
   .nav a:hover { color: var(--gold-deep); }
   .nav.open a {
