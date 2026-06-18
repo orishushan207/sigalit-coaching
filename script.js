@@ -18,6 +18,17 @@ nav.querySelectorAll('a').forEach((a) =>
   })
 );
 
+// ===== Clear hash from URL after scroll so refresh stays at top =====
+document.querySelectorAll('a[href^="#"]').forEach((a) => {
+  a.addEventListener('click', (e) => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: 'smooth' });
+    history.replaceState(null, '', location.pathname);
+  });
+});
+
 // ===== Reveal on scroll =====
 const io = new IntersectionObserver(
   (entries) => {
