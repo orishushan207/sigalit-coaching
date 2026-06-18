@@ -753,16 +753,16 @@ a.cd-value:hover { color: var(--gold-deep); }
     border-bottom: 1px solid var(--line);
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 14px;
+    justify-content: center;
+    gap: 12px;
     opacity: 0;
     transform: translateY(16px);
     transition: opacity .3s ease, transform .3s ease, color .2s;
   }
   .nav a::before { display: none; }
   .nav a::after { display: none; }
-  .nav-icon { display: flex; align-items: center; flex-shrink: 0; opacity: .55; color: var(--gold-deep); }
-  .nav-icon svg { width: 22px; height: 22px; }
+  .nav-icon { display: flex; align-items: center; flex-shrink: 0; opacity: .5; color: var(--gold-deep); }
+  .nav-icon svg { width: 20px; height: 20px; }
   .nav a:first-child { border-top: 1px solid var(--line); }
   .nav a:hover { color: var(--gold-deep); }
   .nav.open a {
