@@ -750,10 +750,11 @@ a.cd-value:hover { color: var(--gold-deep); }
     font-size: 1.45rem;
     letter-spacing: .02em;
     color: var(--ink-soft);
+    width: 230px;
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 14px;
+    justify-content: space-between;
     padding: 13px 0;
     border: none;
     opacity: 0;
